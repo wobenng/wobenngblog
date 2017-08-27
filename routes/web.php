@@ -11,6 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'StaticPagesController@home')->name('home');
+Route::get('signup', 'UserController@create')->name('signup');
+Route::resource('users', 'UserController');
