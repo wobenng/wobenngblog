@@ -1,12 +1,14 @@
 
-<div class="col-md-offset-2 col-md-8">
-  <div class="panel panel-default">
-    <div class="panel-heading">
+@extends('layouts.default')
+@section('content')
+<div class=" col-md-8 usersform" >
+  <div class="panel panel-default" id='panel-default'>
+    <div class="panel-heading" id="panel-heading">
       <h5>注册</h5>
     </div>
     <div class="panel-body">
     @include('shared._errors')
-      <form method="POST" action="{{ route('users.store') }}">
+      <form  method="POST" action="{{ route('users.store') }}">
       {{ csrf_field() }}
           <div class="form-group">
             <label for="name">名称：</label>
@@ -28,8 +30,9 @@
             <input type="password" name="password_confirmation" class="form-control" value="{{ old('password_confirmation') }}">
           </div>
 
-          <button type="subamit" class="btn btn-primary">注册</button>
+          <button type="submit" class="btn btn-primary" id="user_create" >注册</button>
       </form>
     </div>
   </div>
 </div>
+@stop

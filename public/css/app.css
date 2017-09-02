@@ -8461,11 +8461,10 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   position: absolute;
-  top: 136px;
-  z-index: 4;
+  top: 80px;
   padding-left: 8px;
   padding-right: 8px;
-  opacity: 0;
+  background-color: #b3caeb;
 }
 
 #leftside input {
@@ -8475,6 +8474,7 @@ body {
   height: 30px;
   border-radius: 3px;
   border: none;
+  margin-top: 20px;
 }
 
 #leftside #link {
@@ -8527,15 +8527,29 @@ body {
   text-align: center;
 }
 
-#leftside #loginANDlorout a {
+#leftside #loginANDlorout button {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 30%;
   margin: 0 10%;
 }
 
-#leftside #loginANDlorout a:first-child {
+#leftside #loginANDlorout button:first-child {
   float: left;
+}
+
+#leftside #user_edit {
+  display: inline-block;
+  margin: 10px;
+  font-weight: normal;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 1.42857143;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: white;
 }
 
 @font-face {
@@ -8632,5 +8646,72 @@ body {
 #content {
   position: absolute;
   top: 80px;
+}
+
+#content #footer {
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+  height: 20px;
+  background-color: #b3caeb;
+  color: white;
+}
+
+#content #footer p {
+  margin: 0px;
+  padding: 0px;
+}
+
+#content #requestcontent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  overflow: auto;
+}
+
+#welcome {
+  font-size: 30px;
+  color: #26b5ab;
+}
+
+#panel-default {
+  margin-bottom: 0px;
+}
+
+#panel-heading {
+  background-color: #346cb8;
+}
+
+#welcomeUser {
+  font-size: 20px;
+}
+
+#alert_msg {
+  display: inline-block;
+  margin-bottom: 20;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  white-space: nowrap;
+  padding: 6px 12px;
+  font-size: 16px;
+  line-height: 1.62857143;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: #6e6e6e;
 }
 
