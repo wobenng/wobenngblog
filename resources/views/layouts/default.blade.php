@@ -38,24 +38,30 @@
                 ><li><a href="http://www.zhangxinxu.com/" target="_blank">张鑫旭的网站</a></li
                 ><li><a href="http://www.liaoxuefeng.com/" target="_blank">廖雪峰的网站</a></li>
             </ul>
-            <p id="loginANDlorout">
+            <div id="loginANDlorout">
                 @if(Auth::check())
                     <a id="user_edit"  href="{{ route('users.edit', Auth::user()->id) }}">{{Auth::user()->name}}</a>
-                    <a class="btn btn-lg btn-danger" role="button">退出</a>
+                    <a href="#">
+                        <form action="{{route('logout')}}" method="POST">
+                        {{csrf_field()}}
+                        {{method_field('DELETE')}}
+                        <button class="btn btn-lg btn-danger" type="submit" name="button">退出</button>
+                        </form>
+                    </a>
                 @else
-                    <a class="btn btn-lg btn-primary" href="{{ route('signup') }}" role="button">注册</a>
-                    <button class="btn btn-lg btn-success" type="button">登录</button>
+                    <a class="btn btn-block btn-primary" href="{{ route('signup') }}" role="button">注册</a>
+                    <a class="btn btn-block btn-success" href="{{ route('login') }}" role="button">登录</a>
                 @endif
-            </p>
-        </div>
-            <div id="content">
-                <div id="requestcontent">
-                    @yield('content')
-                </div>
-                <div id="footer">
-                    <p>&copy;2017 wobenng</p>
-                </div>
             </div>
+        </div>
+        <div id="content">
+            <div id="requestcontent">
+                @yield('content')
+            </div>
+            <div id="footer">
+                <p>&copy;2017 wobenng</p>
+            </div>
+        </div>
         <script src="/js/jquery-3.2.1.min.js"></script>
         <script src="/js/app.js" ></script>
     </body>

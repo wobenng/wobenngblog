@@ -2,6 +2,7 @@
 
 @section('content')
   <div id="rotation">
+  @include('shared._message')
     <div id="frame">
         <div id="htmllogo"><img src="/image/htmllogo.png"/></div>
         <div id="csslogo"><img src="/image/csslogo.png"/></div>

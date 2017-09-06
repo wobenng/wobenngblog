@@ -8522,20 +8522,8 @@ body {
 #leftside #loginANDlorout {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  width: 90%;
-  margin: 10% 5%;
-  text-align: center;
-}
-
-#leftside #loginANDlorout button {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  width: 30%;
-  margin: 0 10%;
-}
-
-#leftside #loginANDlorout button:first-child {
-  float: left;
+  width: 80%;
+  margin: 10% 10%;
 }
 
 #leftside #user_edit {
@@ -8713,5 +8701,7 @@ body {
   -ms-user-select: none;
   user-select: none;
   color: #6e6e6e;
+  border: 2px solid #346cb8;
+  border-radius: 4px;
 }
 
