@@ -9,6 +9,17 @@ use Auth;
 
 class UserController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth', [            
+            'except' => [ 'create', 'store']
+        ]);
+
+        $this->middleware('guest', [
+            'only' => ['create']
+        ]);
+    }
+
     public function create(){
          //返回HTML格式
           /*$returnhtml=View()->make('users.create')->render();
@@ -49,14 +60,19 @@ class UserController extends Controller
     public function edit(User $user){
         /*$returnhtml=View()->make('users.edit')->render();
         return $returnhtml;*/
+        $this->authorize('update', $user);
         return  view('users.edit', compact('user'));
     }
 
     public function update(User $user, Request $request){
+        
         $this->validate($request, [
             'name' => 'required|max:32',
             'password' => 'nullable|confirmed|min:6'
         ]);
+
+        $this->authorize('update', $user);
+
         //用户不想修改密码，则提交的为原来的密码
         $data = [];
         $data['name'] = $request->name;

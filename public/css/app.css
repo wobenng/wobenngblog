@@ -8526,9 +8526,14 @@ body {
   margin: 10% 10%;
 }
 
+#leftside #loginANDlorout form {
+  text-align: center;
+}
+
 #leftside #user_edit {
-  display: inline-block;
-  margin: 10px;
+  display: block;
+  width: 50%;
+  margin: 10px auto;
   font-weight: normal;
   cursor: pointer;
   font-size: 16px;
@@ -8538,6 +8543,7 @@ body {
   -ms-user-select: none;
   user-select: none;
   color: white;
+  text-align: center;
 }
 
 @font-face {
