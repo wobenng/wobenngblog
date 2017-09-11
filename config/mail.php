@@ -29,7 +29,7 @@ return [
     |
     */
 
-    'host' => env('MAIL_HOST', 'smtp.163.com'),
+    'host' => env('MAIL_HOST', 'smtp.gmail.com'),
 
     /*
     |--------------------------------------------------------------------------
@@ -42,7 +42,7 @@ return [
     |
     */
 
-    'port' => env('MAIL_PORT', 25),
+    'port' => env('MAIL_PORT', 587),
 
     /*
     |--------------------------------------------------------------------------
@@ -56,7 +56,7 @@ return [
     */
 
     'from' => [
-        'address' => env('MAIL_FROM_ADDRESS', 'op493953140@163.com'),
+        'address' => env('MAIL_FROM_ADDRESS', 'wobenng0@gmail.com'),
         'name' => env('MAIL_FROM_NAME', 'confirm'),
     ],
 
@@ -71,7 +71,7 @@ return [
     |
     */
 
-    'encryption' => env('MAIL_ENCRYPTION', NULL),
+    'encryption' => env('MAIL_ENCRYPTION', 'tls'),
 
     /*
     |--------------------------------------------------------------------------
@@ -84,9 +84,9 @@ return [
     |
     */
 
-    'username' => env('op493953140@163.com'),
+    'username' => env('wobenng@gmail.com'),
 
-    'password' => env('qweasd330324'),
+    'password' => env('zugreavsfuwuihmi'),
 
     /*
     |--------------------------------------------------------------------------
