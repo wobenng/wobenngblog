@@ -44,7 +44,7 @@ class UserController extends Controller
             'password'=>bcrypt($request->password),
         ]);
         
-        //一经注册，指定该用户登录
+        //一经注册，指定该用户激活
         $this->sendEmailConfirmationTo($user);
         session()->flash('success', '验证邮件已发送到你的注册邮箱上，请注意查收。');
         return redirect('/');
