@@ -106,7 +106,7 @@ function wordGradient(){
 
 //首页字体渐现以后，首页宽度和背景色变化动画
 function homeAnimation(){
-    var homeItem=document.getElementById('homeItem');
+    
     var blurryTopBorder=document.getElementById('blurryTop');
     var blurryRightborder=document.getElementById('blurryRight');
     var blurryBottomborder=document.getElementById('blurryBottom');

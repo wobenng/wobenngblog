@@ -313,7 +313,7 @@ body{
 
 #article_titles{
     width:80%;
-    height:80%;
+    height:100%;
     h1{
         font-size: 26px;
         color:gray;
@@ -321,6 +321,7 @@ body{
         border-bottom: 1px solid black;
         margin:10px 0px;
         vertical-align: center;
+        padding-bottom:10px;
     }
     a{
         font-size: 22px;
@@ -335,6 +336,12 @@ body{
 
 #article_comment{
     width:80%;
+    height:100%;
+    line-height:26px;
+    text-align: justify;
+    p{
+        font-size:16px;
+    }
     #comment{
         height:150px;
         margin:30px 0px;
@@ -355,7 +362,6 @@ body{
             border-top:1px solid #d2d2d2;
             font-size:14px;
             padding:10px;
-            color:yellow;
         }
         #userAndtime{
             margin-left:50px;

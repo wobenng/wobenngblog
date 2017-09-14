@@ -8713,7 +8713,7 @@ body {
 
 #article_titles {
   width: 80%;
-  height: 80%;
+  height: 100%;
 }
 
 #article_titles h1 {
@@ -8723,6 +8723,7 @@ body {
   border-bottom: 1px solid black;
   margin: 10px 0px;
   vertical-align: center;
+  padding-bottom: 10px;
 }
 
 #article_titles a {
@@ -8738,6 +8739,13 @@ body {
 
 #article_comment {
   width: 80%;
+  height: 100%;
+  line-height: 26px;
+  text-align: justify;
+}
+
+#article_comment p {
+  font-size: 16px;
 }
 
 #article_comment #comment {
@@ -8765,7 +8773,6 @@ body {
   border-top: 1px solid #d2d2d2;
   font-size: 14px;
   padding: 10px;
-  color: yellow;
 }
 
 #article_comment #show_comments #userAndtime {

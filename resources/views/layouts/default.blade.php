@@ -26,11 +26,11 @@
         </div>
 
         <div id="leftside">
-            <input type="text" id="searchBox" placeholder="输入关键字可搜索本站内容"/><i  class="glyphicon glyphicon-search"></i>
             <p id="link">友情链接</p>
             <ul>
                 <li><a href="https://segmentfault.com/" target="_blank">SegmentFault</a></li
                 ><li><a href="https://stackoverflow.com/" target="_blank">Stack Overflow</a></li
+                ><li><a href="https://developer.mozilla.org/en-US/" target="_blank">MDN web docs</a></li
                 ><li><a href="https://juejin.im/" target="_blank">掘金</a></li
                 ><li><a href="https://www.zhihu.com/" target="_blank">知乎</a></li
                 ><li><a href="http://www.runoob.com/" target="_blank">菜鸟教程</a></li
