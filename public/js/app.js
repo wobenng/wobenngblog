@@ -808,6 +808,7 @@ var app = new Vue({
 
 var body = document.getElementsByTagName('body');
 var content = document.getElementById('content');
+var navigation = document.getElementById('navigation');
 var ul = document.getElementsByTagName('ul');
 var ulHeight = ul[0].offsetHeight;
 var requestcontent = document.getElementById('requestcontent');
@@ -835,9 +836,6 @@ function itemHeight() {
         //以下变量是为了防止其他页面没有该元素报错，以下变量只适用于首页
         var rotation = document.getElementById('rotation');
         var homeItem = document.getElementById('homeItem');
-        rotation.style.height = bodyHeight - ulHeight - 20 + 'px'; //20是footer的高度
-        rotation.style.width = bodyWidth * 0.7 + 'px';
-        homeItem.style.height = bodyHeight - ulHeight + 'px';
         blurryBorderMove();
     }
 }
@@ -901,6 +899,8 @@ function homeAnimation() {
     blurryRightborder.style.opacity = 0;
     myname.style.opacity = 0;
     signature.style.opacity = 0;
+    leftside.style.opacity = 1;
+    content.style.opacity = 1;
     //因为页面的动态加载元素，所以将出现的元素加载放在这里，防止js报错
     /*if(document.getElementById('signup')){
     var signup=document.getElementById('signup');
