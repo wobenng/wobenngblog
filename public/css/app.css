@@ -8386,7 +8386,7 @@ body {
 
 #homeItem {
   width: 100%;
-  height: calc(100% - $liHeight);
+  height: calc(100vh - 80px);
   background-color: #f5f5f5;
   position: relative;
   z-index: 3;
@@ -8465,11 +8465,10 @@ body {
   position: absolute;
   top: 80px;
   width: calc(30%);
-  height: calc(100% - $liHeight);
+  height: calc(100% - 80px);
   padding-left: 8px;
   padding-right: 8px;
   background-color: #b3caeb;
-  opacity: 0;
 }
 
 #leftside input {
@@ -8578,7 +8577,7 @@ body {
 }
 
 #rotation {
-  height: calc(100% - $liHeight - 20);
+  height: calc(100%);
   width: 100%;
   background-color: #f5f5f5;
   display: -webkit-box;
@@ -8649,8 +8648,7 @@ body {
   left: calc(30%);
   top: 80px;
   width: calc(70%);
-  height: calc(100% - $liHeight);
-  opacity: 0;
+  height: calc(100% - 80px);
 }
 
 #content #footer {
@@ -8669,7 +8667,7 @@ body {
 
 #content #requestcontent {
   width: calc(100%);
-  height: calc(100%);
+  height: calc(100% - 20px);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

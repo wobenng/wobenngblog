@@ -41,14 +41,6 @@ var animationTime=1;
 
  // 根据不同屏幕的大小，设置不同的高度，填充背景色而不出现滚动条
 function itemHeight(){
-    /*body[0].style.width=bodyWidth+'px';
-    content.style.left=bodyWidth*0.3+'px';
-    content.style.width=bodyWidth*0.7+'px';
-    content.style.height=(bodyHeight-ulHeight)+'px';
-    leftside.style.width=bodyWidth*0.3+'px';
-    leftside.style.height=(bodyHeight-ulHeight)+'px';
-    requestcontent.style.height=(bodyHeight-ulHeight-20)+'px';
-    requestcontent.style.width=bodyWidth*0.7+'px';*/
     //以下内容根据场景出现，防止js报错
     if(document.getElementById('rotation')){
     //以下变量是为了防止其他页面没有该元素报错，以下变量只适用于首页
@@ -104,7 +96,7 @@ function wordGradient(){
 
 //首页字体渐现以后，首页宽度和背景色变化动画
 function homeAnimation(){
-    
+    var homeItem=document.getElementById('homeItem');
     var blurryTopBorder=document.getElementById('blurryTop');
     var blurryRightborder=document.getElementById('blurryRight');
     var blurryBottomborder=document.getElementById('blurryBottom');
@@ -112,15 +104,7 @@ function homeAnimation(){
     var myname=document.getElementById('myname');
     var signature=document.getElementById('signature');
     homeItem.style.opacity=0;
-    homeItem.style.zIndex=0;
-    blurryTopBorder.style.opacity=0;
-    blurryBottomborder.style.opacity=0;
-    blurryLeftborder.style.opacity=0;
-    blurryRightborder.style.opacity=0;
-    myname.style.opacity=0; 
-    signature.style.opacity=0;  
-    leftside.style.opacity=1;
-    content.style.opacity=1;     
+    homeItem.style.zIndex=0;   
     //因为页面的动态加载元素，所以将出现的元素加载放在这里，防止js报错
     /*if(document.getElementById('signup')){
     var signup=document.getElementById('signup');
