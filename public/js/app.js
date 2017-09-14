@@ -822,14 +822,14 @@ var animationTime = 1;
 
 // 根据不同屏幕的大小，设置不同的高度，填充背景色而不出现滚动条
 function itemHeight() {
-    body[0].style.width = bodyWidth + 'px';
-    content.style.left = bodyWidth * 0.3 + 'px';
-    content.style.width = bodyWidth * 0.7 + 'px';
-    content.style.height = bodyHeight - ulHeight + 'px';
-    leftside.style.width = bodyWidth * 0.3 + 'px';
-    leftside.style.height = bodyHeight - ulHeight + 'px';
-    requestcontent.style.height = bodyHeight - ulHeight - 20 + 'px';
-    requestcontent.style.width = bodyWidth * 0.7 + 'px';
+    /*body[0].style.width=bodyWidth+'px';
+    content.style.left=bodyWidth*0.3+'px';
+    content.style.width=bodyWidth*0.7+'px';
+    content.style.height=(bodyHeight-ulHeight)+'px';
+    leftside.style.width=bodyWidth*0.3+'px';
+    leftside.style.height=(bodyHeight-ulHeight)+'px';
+    requestcontent.style.height=(bodyHeight-ulHeight-20)+'px';
+    requestcontent.style.width=bodyWidth*0.7+'px';*/
     //以下内容根据场景出现，防止js报错
     if (document.getElementById('rotation')) {
         //以下变量是为了防止其他页面没有该元素报错，以下变量只适用于首页

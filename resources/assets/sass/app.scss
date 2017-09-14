@@ -43,6 +43,7 @@ $logoWidth:150px;
 body{
     margin:0px;
     padding:0px;
+    width:calc(100%)
 }
 #navigation{
     @extend %ulStyle;
@@ -120,6 +121,8 @@ body{
     box-sizing: border-box;
     position: absolute;
     top:$liHeight;
+    width:calc(30%);
+    height:calc(100% - $liHeight);
     padding-left:8px;//30%*((1-80%)/2)
     padding-right: 8px;
     background-color: #b3caeb;
@@ -257,7 +260,10 @@ body{
 }
 #content{
     position:absolute;
+    left:calc(30%);
     top:$liHeight;
+    width:calc(70%);
+    height:calc(100% - $liHeight);
     #footer{
         margin: 0px;
         padding: 0px;
@@ -271,6 +277,8 @@ body{
         }
     }
     #requestcontent{
+        width:calc(100%);
+        height:calc(100%);
         display:flex;
         flex-direction: column;
         justify-content: center;

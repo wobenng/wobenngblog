@@ -8374,6 +8374,7 @@ button.close {
 body {
   margin: 0px;
   padding: 0px;
+  width: calc(100%);
 }
 
 #navigation li a:link,
@@ -8462,6 +8463,8 @@ body {
           box-sizing: border-box;
   position: absolute;
   top: 80px;
+  width: calc(30%);
+  height: calc(100% - $liHeight);
   padding-left: 8px;
   padding-right: 8px;
   background-color: #b3caeb;
@@ -8639,7 +8642,10 @@ body {
 
 #content {
   position: absolute;
+  left: calc(30%);
   top: 80px;
+  width: calc(70%);
+  height: calc(100% - $liHeight);
 }
 
 #content #footer {
@@ -8657,6 +8663,8 @@ body {
 }
 
 #content #requestcontent {
+  width: calc(100%);
+  height: calc(100%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
