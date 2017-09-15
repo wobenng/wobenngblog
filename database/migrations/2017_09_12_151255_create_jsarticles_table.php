@@ -16,7 +16,6 @@ class CreateJsarticlesTable extends Migration
         Schema::create('jsarticles', function (Blueprint $table) {
             $table->increments('id');
             $table->string('title');
-            $table->timestamp('published_at');
             $table->timestamps();
         });
     }

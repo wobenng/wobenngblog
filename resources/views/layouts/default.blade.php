@@ -9,10 +9,10 @@
     <body>
         <ul id="navigation">
             <li id="home"><a href="/" >Home</a></li
-            ><li id="html"><a href="{{route('Htmlarticles')}}" >HTML</a></li
-            ><li id="css"><a href="{{route('Cssarticles')}}" >CSS</a></li
-            ><li id="js"><a href="{{route('Jsarticles')}}" >javaScript</a></li
-            ><li id="auxiliary"><a href="{{route('Otherarticles')}}" >Other</a></li>
+            ><li id="html"><a href="{{route('Htmlarticles')}}" id="showhtml" >HTML</a></li
+            ><li id="css"><a href="{{route('Cssarticles')}}" class="showcss" >CSS</a></li
+            ><li id="js"><a href="{{route('Jsarticles')}}" class="showjs" >javaScript</a></li
+            ><li id="auxiliary"><a href="{{route('Otherarticles')}}" class="showother"  >Other</a></li>
         </ul>
         
         <div id="homeItem">

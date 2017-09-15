@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\User;
-use App\Htmlarticle;
+use App\Twohtmlarticle;
 use App\Cssarticle;
 use App\Jsarticle;
 use App\Otherarticle;
@@ -17,7 +17,7 @@ class CommentsController extends Controller
        $this->middleware('auth');
    }
 
-    public function store(Htmlarticle $htmlid,Request $request)
+    public function store(Twohtmlarticle $htmlid,Request $request)
     {
         $this->validate($request, [
             'content' => 'required|max:140'

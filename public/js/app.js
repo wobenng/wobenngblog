@@ -808,6 +808,7 @@ var app = new Vue({
 
 var body = document.getElementsByTagName('body');
 var content = document.getElementById('content');
+var navigation = document.getElementById('navigation');
 var ul = document.getElementsByTagName('ul');
 var ulHeight = ul[0].offsetHeight;
 var requestcontent = document.getElementById('requestcontent');
@@ -822,23 +823,14 @@ var animationTime = 1;
 
 // 根据不同屏幕的大小，设置不同的高度，填充背景色而不出现滚动条
 function itemHeight() {
-    /*body[0].style.width=bodyWidth+'px';
-    content.style.left=bodyWidth*0.3+'px';
-    content.style.width=bodyWidth*0.7+'px';
-    content.style.height=(bodyHeight-ulHeight)+'px';
-    leftside.style.width=bodyWidth*0.3+'px';
-    leftside.style.height=(bodyHeight-ulHeight)+'px';
-    requestcontent.style.height=(bodyHeight-ulHeight-20)+'px';
-    requestcontent.style.width=bodyWidth*0.7+'px';*/
     //以下内容根据场景出现，防止js报错
     if (document.getElementById('rotation')) {
         //以下变量是为了防止其他页面没有该元素报错，以下变量只适用于首页
         var rotation = document.getElementById('rotation');
         var homeItem = document.getElementById('homeItem');
-        rotation.style.height = bodyHeight - ulHeight - 20 + 'px'; //20是footer的高度
-        rotation.style.width = bodyWidth * 0.7 + 'px';
-        homeItem.style.height = bodyHeight - ulHeight + 'px';
         blurryBorderMove();
+    } else {
+        homeAnimation();
     }
 }
 itemHeight();
@@ -886,21 +878,9 @@ function wordGradient() {
 
 //首页字体渐现以后，首页宽度和背景色变化动画
 function homeAnimation() {
-
-    var blurryTopBorder = document.getElementById('blurryTop');
-    var blurryRightborder = document.getElementById('blurryRight');
-    var blurryBottomborder = document.getElementById('blurryBottom');
-    var blurryLeftborder = document.getElementById('blurryLeft');
-    var myname = document.getElementById('myname');
-    var signature = document.getElementById('signature');
+    var homeItem = document.getElementById('homeItem');
     homeItem.style.opacity = 0;
     homeItem.style.zIndex = 0;
-    blurryTopBorder.style.opacity = 0;
-    blurryBottomborder.style.opacity = 0;
-    blurryLeftborder.style.opacity = 0;
-    blurryRightborder.style.opacity = 0;
-    myname.style.opacity = 0;
-    signature.style.opacity = 0;
     //因为页面的动态加载元素，所以将出现的元素加载放在这里，防止js报错
     /*if(document.getElementById('signup')){
     var signup=document.getElementById('signup');
