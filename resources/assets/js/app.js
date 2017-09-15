@@ -47,6 +47,8 @@ function itemHeight(){
     var rotation=document.getElementById('rotation');
     var homeItem=document.getElementById('homeItem');
     blurryBorderMove();
+    }else{
+        homeAnimation();
     }
 }
 itemHeight();
@@ -97,14 +99,8 @@ function wordGradient(){
 //首页字体渐现以后，首页宽度和背景色变化动画
 function homeAnimation(){
     var homeItem=document.getElementById('homeItem');
-    var blurryTopBorder=document.getElementById('blurryTop');
-    var blurryRightborder=document.getElementById('blurryRight');
-    var blurryBottomborder=document.getElementById('blurryBottom');
-    var blurryLeftborder=document.getElementById('blurryLeft');
-    var myname=document.getElementById('myname');
-    var signature=document.getElementById('signature');
     homeItem.style.opacity=0;
-    homeItem.style.zIndex=0;   
+    homeItem.style.zIndex=0; 
     //因为页面的动态加载元素，所以将出现的元素加载放在这里，防止js报错
     /*if(document.getElementById('signup')){
     var signup=document.getElementById('signup');

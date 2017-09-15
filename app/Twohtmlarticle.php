@@ -4,10 +4,11 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Htmlarticle extends Model
+class Twohtmlarticle extends Model
 {
-    public function comments()
+    protected $fillable = [ 'title'];
+   public function comments()
     {
         return $this->morphMany('App\Comment', 'commentable');
-    } 
+    }
 }

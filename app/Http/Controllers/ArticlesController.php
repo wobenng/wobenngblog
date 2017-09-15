@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Htmlarticle;
+use App\Twohtmlarticle;
 use App\Cssarticle;
 use App\Jsarticle;
 use App\Otherarticle;
@@ -14,7 +14,7 @@ class ArticlesController extends Controller
 {
 
     public function showHtml(){
-        $html = Htmlarticle::all();
+        $html = Twohtmlarticle::all();
         return view('articles.showhtml',compact('html'));
     }
 
@@ -34,8 +34,8 @@ class ArticlesController extends Controller
     }
 
     public function showHtmlArticle($htmlid){
-        $article=Htmlarticle::find($htmlid);
-        $allcomments=$article->comments()->where('commentable_type', 'App\Htmlarticle')->where('commentable_id', $htmlid)->get();
+        $article=Twohtmlarticle::find($htmlid);
+        $allcomments=$article->comments()->where('commentable_type', 'App\Twohtmlarticle')->where('commentable_id', $htmlid)->get();
         if($allcomments){
             foreach($allcomments as $val){
                 $val['user']=User::find($val->user_id);

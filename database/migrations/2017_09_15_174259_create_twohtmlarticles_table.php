@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateHtmlarticlesTable extends Migration
+class CreateTwohtmlarticlesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,9 @@ class CreateHtmlarticlesTable extends Migration
      */
     public function up()
     {
-        Schema::create('htmlarticles', function (Blueprint $table) {
+        Schema::create('twohtmlarticles', function (Blueprint $table) {
             $table->increments('id');
             $table->string('title');
-            $table->timestamp('published_at');
             $table->timestamps();
         });
     }
@@ -28,6 +27,6 @@ class CreateHtmlarticlesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('htmlarticles');
+        Schema::dropIfExists('twohtmlarticles');
     }
 }
