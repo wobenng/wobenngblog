@@ -26,7 +26,7 @@
         </div>
 
         <div id="leftside">
-            <p id="link"><span>友情链接</span></p>
+            <div  id="link"><p>友情链接</p></div>
             <ul>
                 <li><a href="https://segmentfault.com/" target="_blank">SegmentFault</a></li
                 ><li><a href="https://stackoverflow.com/" target="_blank">Stack Overflow</a></li

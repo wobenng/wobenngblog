@@ -8482,26 +8482,28 @@ body {
 
 #leftside #link {
   color: black;
-  font-size: 3rem;
+  font-size: 2rem;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 80%;
   height: 15%;
   margin: 0 10%;
-  padding: 35% 0;
   text-align: center;
-}
-
-#leftside #link span {
-  border-bottom: 2px black solid;
-  border-top: 2px black solid;
-  height: 30%;
-  vertical-align: middle;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 #leftside ul {
   width: 100%;
-  height: 70%;
+  height: 60%;
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
@@ -8513,6 +8515,9 @@ body {
           box-sizing: border-box;
   list-style: none;
   text-align: center;
+  width: 100%;
+  font-size: 1.5rem;
+  padding: 3.3% 0;
   margin: 0;
   height: 11%;
 }
@@ -8538,8 +8543,8 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 80%;
-  margin: 0 10%;
-  height: 15%;
+  margin: 5% 10%;
+  height: 10%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

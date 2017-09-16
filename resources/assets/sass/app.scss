@@ -136,23 +136,19 @@ body{
     }
     #link{
         color:black;
-        font-size:3rem;
+        font-size:2rem;
         box-sizing: border-box;
         width:80%;
         height:15%;
         margin:0 10%;
-        padding:35% 0;
         text-align: center;
-        span{
-            border-bottom: 2px black solid;
-            border-top:2px black solid;
-            height:30%;
-            vertical-align: middle;
-        }
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
     }
     ul{
         width:100%;
-        height:70%;
+        height:60%;
         margin: 0;
         padding: 0;
         box-sizing: border-box;
@@ -160,6 +156,10 @@ body{
             box-sizing: border-box;
             list-style: none;
             text-align: center;
+            width:100%;
+            font-size: 1.5rem;
+            padding:3.3% 0;
+
             margin:0;
             height:11%;
             a:link{
@@ -180,8 +180,8 @@ body{
     #loginANDlorout{
         box-sizing: border-box;
         width:80%;
-        margin:0 10%;
-        height:15%; 
+        margin:5% 10%;
+        height:10%; 
         display: flex;
         flex-direction: column;
         justify-content: center;
