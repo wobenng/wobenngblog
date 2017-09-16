@@ -15,7 +15,7 @@ class CreateOtherarticlesTable extends Migration
     {
         Schema::create('otherarticles', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('title');
+            $table->string('title');       
             $table->timestamps();
         });
     }

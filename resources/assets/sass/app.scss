@@ -98,12 +98,11 @@ body{
      background-color:#007acc;
 }
 #myname,#signature{
-    font-size:5rem;
+    font-size:4rem;
     box-sizing: border-box;
     color:#007acc;
     height:10%;
-    line-height: 10%;
-    width:25%;
+    width:60%;
     opacity:0;
     transition: opacity 5s ease-in-out;
     text-align: center;
@@ -111,12 +110,12 @@ body{
 #myname{
     position: absolute;
     top:40%;
-    left:37.5%;
+    left:20%;
 }
 #signature{
     position: absolute;
     top:50%;
-    left:37.5%;
+    left:20%;
 }
 #leftside{
     box-sizing: border-box;
@@ -137,27 +136,32 @@ body{
     }
     #link{
         color:black;
-        font-size:2rem;
+        font-size:3rem;
         box-sizing: border-box;
-        width:25%;
-        height:6%;
-        margin:10% 37.5%;
+        width:80%;
+        height:15%;
+        margin:0 10%;
+        padding:35% 0;
         text-align: center;
-        border-bottom: 2px black solid;
-        border-top:2px black solid;
+        span{
+            border-bottom: 2px black solid;
+            border-top:2px black solid;
+            height:30%;
+            vertical-align: middle;
+        }
     }
     ul{
-        width:50%;
-        height:50%;
-        margin:0 25%;
+        width:100%;
+        height:70%;
+        margin: 0;
         padding: 0;
         box-sizing: border-box;
         li{
             box-sizing: border-box;
             list-style: none;
             text-align: center;
-            margin:5% 0;
-            height:8%;
+            margin:0;
+            height:11%;
             a:link{
                 color:black;
             }
@@ -176,8 +180,11 @@ body{
     #loginANDlorout{
         box-sizing: border-box;
         width:80%;
-        margin:10% 10%;
-        height:14%; 
+        margin:0 10%;
+        height:15%; 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         form{
             text-align: center;
         }
